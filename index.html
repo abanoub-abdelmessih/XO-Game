@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>XO Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="assets/imgs/xo-icon.png" type="image/x-icon">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/output.css">
+</head>
+<body>
+    <div class="game flex justify-center items-center min-h-screen bg-gray-200">
+        <div class="text-center p-5">
+            <div class="dashboard flex mb-10 justify-between items-center gap-4 md:text-2xl text-sm font-bold text-white">
+                <h1 class="text-x-color bg-main-color w-1/3 p-4 rounded-md">X <span class="text-o-color">O</span></h1>
+                <h2 class="bg-main-color shadow-2xl rounded-md w-3/4 p-4"><span id="playerTurn">Player <span class="text-o-color">X</span> Turn</span></h2>
+                <button class="newGame bg-main-color p-4 rounded-md w-1/3"><i class="fa-solid fa-rotate-right"></i></button>
+            </div>
+            <div class="grid grid-cols-3 gap-3 justify-items-center text-5xl font-bold rounded-md bg-[#EEEEEE] bg-opacity-65 shadow-2xl p-10 text-white" id="board">
+                <div class="cell rounded-md bg-main-color transition duration-500 cursor-pointer w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 flex justify-center items-center" id="1"></div>
+                <div class="cell rounded-md bg-main-color transition duration-500 cursor-pointer w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 flex justify-center items-center" id="2"></div>
+                <div class="cell rounded-md bg-main-color transition duration-500 cursor-pointer w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 flex justify-center items-center" id="3"></div>
+                <div class="cell rounded-md bg-main-color transition duration-500 cursor-pointer w-20 h-20 sm:wx-24 sm:h-24 md:w-32 md:h-32 flex justify-center items-center" id="4"></div>
+                <div class="cell rounded-md bg-main-color transition duration-500 cursor-pointer w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 flex justify-center items-center" id="5"></div>
+                <div class="cell rounded-md bg-main-color transition duration-500 cursor-pointer w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 flex justify-center items-center" id="6"></div>
+                <div class="cell rounded-md bg-main-color transition duration-500 cursor-pointer w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 flex justify-center items-center" id="7"></div>
+                <div class="cell rounded-md bg-main-color transition duration-500 cursor-pointer w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 flex justify-center items-center" id="8"></div>
+                <div class="cell rounded-md bg-main-color transition duration-500 cursor-pointer w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 flex justify-center items-center" id="9"></div>
+            </div>
+            <div class="scoreContainer mt-5 p-5 bg-[#EEEEEE] bg-opacity-65 text-black">
+                <h3 class="text-2xl font-bold">Score :</h3>
+                <div class="score flex justify-center items-center py-5 gap-5 md:text-2xl text-sm font-bold">
+                    <span class="bg-x-color p-5 rounded-md shadow-2xl">X : <span id="XScore"></span></span>
+                    <span class="bg-[#A7BDC8] p-5 rounded-md shadow-2xl">Draw : <span id="Draw"></span></span>
+                    <span class="bg-o-color p-5 rounded-md shadow-2xl">O : <span id="OScore"></span></span>
+                </div>
+                <p class="text-lg py-5">Developed by <span class="font-bold">Abanoub Abd Elmessih</span></p>
+                <span class="p-3 text-xl"><a href="https://github.com/Abanoub-Abd-Elmessih" target="_blank"><i class="fa-brands fa-github"></i></a></span>
+                <span class="p-3 text-xl"><a href="https://www.linkedin.com/in/abanoub-abd-elmessih-b8a37b302/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></span>
+                <span class="p-3 text-xl"><a href="mailto:abanoubabdelmessih110@gmail.com" target="_blank"><i class="fa-brands fa-google"></i></a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Jquery JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
